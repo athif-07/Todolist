@@ -1,0 +1,184 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 23, 42);
+    background-repeat: no-repeat;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.container {
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    padding: 0 auto;
+    width: 50%;
+    height: auto;
+    padding: 50px;
+    box-shadow: inset 0px 0px 10px 1px black;
+    box-shadow: inset 0px 0px 10px 5px black;
+    box-shadow: inset 10px 0px 100px 5px black;
+    box-shadow: inset 10px 10px 100px 5px black;
+    border-radius: 100px;
+    background-color: aliceblue;
+    border: none;
+}
+
+
+#inputField {
+    margin: 50px 10px 0px 0px;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px 1px black;
+    border: none;
+    width: 50%;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+    vertical-align: middle;
+    padding: 10px;
+    cursor: wait;
+}
+
+#addTodo {
+    cursor: pointer;
+    font-family: "Saira", sans-serif;
+    margin: 50px 10px 0px 0px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    vertical-align: middle;
+    height: 50px;
+    width: 20%;
+    transition: all 0.3s ease-in;
+}
+
+#addTodo:hover {
+    border: none;
+    box-shadow: 0px 0px 10px 1px black;
+
+}
+
+.to-dos {
+    width: auto;
+    font-size: 20px;
+    margin: 25px;
+    text-align: left;
+}
+
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #787878;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.paragraph-styling {
+    margin: 0;
+    flex-grow: 1;
+    margin: 0px;
+    cursor: pointer;
+}
+
+
+
+.delete-btn {
+    background: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20%;
+    width: auto;
+    width: auto;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.delete-btn:hover {
+    box-shadow: inset 3cap 0px 10px 1px black;
+    color: #ff0000;
+    text-shadow: 0.4cap 0px 0px 20px rgb(255, 255, 255);
+}
+
+.video-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media(max-width:600px) {
+    .container {
+        width: auto;
+        margin: 10px;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 10px;
+
+    }
+
+    #ddTodo {
+        font-size: 5px;
+    }
+
+    .video-container {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    video {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .todo-item {
+        font-size: 15px;
+        width: auto;
+    }
+
+    .todo-item .par {
+        width: 10px;
+    }
+
+}
+
+@media(max-width:400px) {
+    #addTodo {
+        font-size: 10px;
+    }
+
+    #inputField {
+        width: 150px;
+    }
+}
+
+
+@media (min-height:600px) {
+
+    body {
+        height: auto;
+    }
+}
